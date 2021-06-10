@@ -1,6 +1,7 @@
-## Format the record data, align the data for each column, and print it。
+## Using this class to pretty print the record data, column will be aligned for each row.
 
-```
+
+```java
 	public static void main(String[] args) {
 		PrettyRecordPrinter print = new PrettyRecordPrinter();
 //		print.printout();
@@ -12,7 +13,7 @@
 		print.println();
 
 		Layout layout = new Layout();
-//		layout.setPadTab(8); //Bug
+//		layout.setPadTab(8); 
 		layout.enableTopBorder('/', '~', '\\');
 		layout.enableBottomBorder('\\', '_', '/');
 		print.setLayout(layout);
@@ -72,45 +73,4 @@
 	}
 ```
 
----
-
-+--------------------------------------------------------------------+
-| d                            |                  | 123 | 10.33 | KB |
-| Thu Jun 10 18:12:30 CST 2021 | Author:Rison han |     |       |    |
-+--------------------------------------------------------------------+
-
----
-
-/~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
-| 95683333333333 | poo                          | o222222222222i  |
-| 95668          | pooiuyttrt                   | oi              |
-| www            | Thu Jun 10 18:12:30 CST 2021 | ddddddddddddddd |
-| ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ |
-| aaas           | sss                          |                 |
-|                |                              |                 |
-| aaas           | s1111111111111sssssss1111ss  |                 |
-\_________________________________________________________________/
-
----
-
-.95668 , .....pooiuyttrt , .........................oi , ..............
-<NULL> , .95683333333333 , ........................poo , o222222222222i
-...... , ............... , ........................... , ..............
-...... , ............... , ........................... , ..............
-...... , ............... , ........................... , ..............
-...www , ddddddddddddddd , ........................... , ..............
------------------------------------------------------------------------
-..aaas , .........<NULL> , s1111111111111sssssss1111ss , ..............
-
----
-
-ddd , 
-
----
-  
-                    /~~~~~~~\
-                    (@|   |@)
-                    ( |- -| )
-                    ( | = | )
-                    \_______/
-
+![Output image!](https://github.com/pineconehouse/pretty/blob/main/output.png "Output")
