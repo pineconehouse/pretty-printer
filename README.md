@@ -1,5 +1,5 @@
 ## Pretty record printer
-> Using this class to pretty print the record data, column will be aligned for each row.
+> Using this class to pretty print the records, Rows will be output in column alignment.
 
 
 ```java
